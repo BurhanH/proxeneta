@@ -4,11 +4,11 @@ The proxeneta project. Demo
 ```mermaid
 flowchart TD;
     subgraph Producer;
-        direction LR;
-        database;
-        cache;
-        service;
-        API;
+        direction TB;
+        database1;
+        cache1;
+        service1;
+        API1;
     end
     subgraph Kafka;
         direction TB;
@@ -17,12 +17,13 @@ flowchart TD;
         partitions;
     end
     subgraph Consumer;
-        direction LR;
-        database;
-        cache;
-        service;
-        API;
+        direction TB;
+        database2;
+        cache2;
+        service2;
+        API2;
     end
-    Producer --> Kafka
-    Kafka --> Consumer
+
+    Producer --> Kafka;
+    Kafka --> Consumer;
 ```
