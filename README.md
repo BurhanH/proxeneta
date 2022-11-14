@@ -4,6 +4,6 @@ The proxeneta project. Demo
 ```mermaid
 flowchart TD;
     Producer;
-    Kafka[fab:fa-kafka];
+    Kafka[fa-handshake Kafka];
     Consumer;
 ```
