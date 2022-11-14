@@ -5,10 +5,11 @@ The proxeneta project. Demo
 flowchart TD;
     subgraph Producer;
         direction TB;
-        database1;
-        cache1;
-        service1;
-        API1;
+        p-database;
+        p-cache;
+        p-service;
+        p-API;
+        p-gRPC;
     end
     subgraph Kafka;
         direction TB;
@@ -18,11 +19,17 @@ flowchart TD;
     end
     subgraph Consumer;
         direction TB;
-        database2;
-        cache2;
-        service2;
-        API2;
+        c-database;
+        c-cache;
+        c-service;
+        c-API;
+        c-gRPC;
     end
+    subgraph Monitor;
+        direction TB;
+        m-API;
+        m-gRPC;
+        
 
     Producer --> Kafka;
     Kafka --> Consumer;
