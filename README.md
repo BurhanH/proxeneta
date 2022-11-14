@@ -5,8 +5,24 @@ The proxeneta project. Demo
 flowchart TD;
     subgraph Producer
         direction LR
-    Kafka
-    Consumer
+        database
+        cache
+        service
+        API
+
+    subgraph Kafka
+        direction TB
+        nodes
+        topics
+        partitions
+
+    subgraph Consumer
+        direction LR
+        database
+        cache
+        service
+        API
+
     Producer --> Kafka
     Kafka --> Consumer
 ```
