@@ -33,4 +33,6 @@ flowchart TD;
 
     Producer --> Kafka;
     Kafka --> Consumer;
+    Monitor --> Producer;
+    Monitor --> Consumer;
 ```
