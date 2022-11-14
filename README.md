@@ -31,8 +31,8 @@ flowchart TD;
         m-gRPC;
     end
 
-    Producer --> Kafka;
-    Kafka --> Consumer;
     Monitor --> Producer;
     Monitor --> Consumer;
+    Producer --> Kafka;
+    Consumer --> Kafka;
 ```
