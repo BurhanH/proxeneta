@@ -2,9 +2,8 @@
 The proxeneta project. Demo
 
 ```mermaid
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
+flowchart TD;
+    Producer;
+    Kafka;
+    Consumer;
 ```
