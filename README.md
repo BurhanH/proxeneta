@@ -29,7 +29,7 @@ flowchart TD;
         direction TB;
         m-API;
         m-gRPC;
-        
+    end
 
     Producer --> Kafka;
     Kafka --> Consumer;
